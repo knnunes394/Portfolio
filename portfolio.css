@@ -11,9 +11,28 @@ header {
   padding: 20px;
   text-align: center;
 }
+
 /*
 section {
     margin: 20px;
+}
+
+.container {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game {
+  height: 50vmin;
+  width: 50vmin;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box{
+  height: 15vmin;
+  width: 15vmin;
+  font-size: 8vmin;
 }
 */
 nav ul {
