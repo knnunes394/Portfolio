@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sudoku Board</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+    }
+
+    .sudoku-board {
+      display: grid;
+      grid-template-columns: repeat(9, 40px);
+      grid-template-rows: repeat(9, 40px);
+      gap: 1px;
+      
+    }
+
+    .cell {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-size: 20px;
+      border: 1px solid #ccc;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="sudoku-board" id="sudoku-board"></div>
+
+  <script>
+    const board = [
+      [5, 3, 0, 0, 7, 0, 0, 0, 0],
+      [6, 0, 0, 1, 9, 5, 0, 0, 0],
+      [0, 9, 8, 0, 0, 0, 0, 6, 0],
+      [8, 0, 0, 0, 6, 0, 0, 0, 3],
+      [4, 0, 0, 8, 0, 3, 0, 0, 1],
+      [7, 0, 0, 0, 2, 0, 0, 0, 6],
+      [0, 6, 0, 0, 0, 0, 2, 8, 0],
+      [0, 0, 0, 4, 1, 9, 0, 0, 5],
+      [0, 0, 0, 0, 8, 0, 0, 7, 9],
+    ];
+
+    const boardContainer = document.getElementById('sudoku-board');
+
+    function renderBoard(board) {
+      boardContainer.innerHTML = '';
+      for (let row = 0; row < 9; row++) {
+        for (let col = 0; col < 9; col++) {
+          const input = document.createElement('input');
+          input.type = 'text';
+          input.maxLength = 1;
+          input.classList.add('cell');
+
+          const value = board[row][col];
+          if (value !== 0) {
+            input.value = value;
+            input.disabled = true;
+            input.style.backgroundColor = '#eee';
+          }
+
+          boardContainer.appendChild(input);
+        }
+      }
+    }
+
+    renderBoard(board);
+  </script>
+</body>
+</html>
