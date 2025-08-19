@@ -34,12 +34,23 @@ section {
 }
 */
 nav ul {
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
-nav ul li {
+
+nav li {
+  float: left;
+}
+
+nav li a {
   display: inline;
-  margin: 0 10px;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
 }
 /*
 footer {
