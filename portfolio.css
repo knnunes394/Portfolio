@@ -1,14 +1,15 @@
 
 
-header {
+.header {
   /*background: #4CAF50;
   color: white;*/
+  background-image: url(pexels-mccutcheon-1566909.jpg);
+  background-repeat: no-repeat;
+  background-size:  cover;
   padding: 5px;
   text-align: center;
 }
-h1 {
-  background-color: green;
-}
+
 body {
   margin: 0;
 }
@@ -35,10 +36,24 @@ section {
     margin: 20px;
 }
 */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+
+nav ul li {
+  display: inline;
+  float: left;
+
+}
 
 nav ul li a {
   display: block;
-  color: blue;
+  float: left;
+  color: white;
   text-align: center;
   padding: 8px 16px;
   text-decoration: none;
@@ -53,6 +68,6 @@ nav ul li a {
 .row::after {
   content: "";
   display: table;
-  clear: right;
+  clear: left;
 }
 
