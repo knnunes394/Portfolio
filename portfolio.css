@@ -2,8 +2,9 @@
 
 .header {
   /*background: #4CAF50;
-  color: white;*/
-  background-image: url(pexels-mccutcheon-1566909.jpg);
+  color: white;
+  background-image: url(pexels-mccutcheon-1566909.jpg); */
+  background-image: linear-gradient(red, green, blue);
   background-repeat: no-repeat;
   background-size:  cover;
   padding: 5px;

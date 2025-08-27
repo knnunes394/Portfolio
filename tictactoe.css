@@ -1,0 +1,17 @@
+.container {
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.game {
+  height: 50vmin;
+  width: 50vmin;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box{
+  height: 15vmin;
+  width: 15vmin;
+  font-size: 8vmin;
+}
+/*
