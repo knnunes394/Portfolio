@@ -25,6 +25,28 @@ body {
   padding: 15px;
 }
 
+.content {
+    text-align: center;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  place-items: center;
+  text-align: center;
+}
+
+.content ul li {
+  background:lime;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius:8px;
+  border-color: black;
+  max-width: 20%; 
+}
+
+
 /*
   padding: 12px;
   margin-bottom: 10px;
