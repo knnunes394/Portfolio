@@ -1,0 +1,11 @@
+.image_container {
+  width: 50%;
+  height: 500px;
+  padding: 10px;
+  margin: 0;
+}
+
+img.align-right {
+  float: right;
+  margin-left: 10px;
+}
