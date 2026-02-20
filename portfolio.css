@@ -63,7 +63,23 @@ img {
 .project-section {
 	font-size: 10px;
 	text-align: center;
-	padding: 15px;	
+	padding: 15px;
+	position: relative;
+}
+
+.project-slideshow {
+	width: 100%
+	height: auto;
+}
+
+.project-slideshow-buttons
+
+.left-button {
+	float: left!important;
+}
+
+.right-button {
+	float: right!important;
 }
 
 .project-section ul, .skills-section ul {
